@@ -1,2 +1,7 @@
 This our project to visualize path using graph algorithms.
-![Screenshot 2022-07-05 at 01-22-45 Shortest Path Finder](Screenshot 2022-07-05 at 01-22-45 Shortest Path Finder.png)
+
+<img
+  src="./Screenshot 2022-07-05 at 01-22-45 Shortest Path Finder.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
