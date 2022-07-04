@@ -435,7 +435,7 @@ export default class PathfindingVisualizer extends Component {
                 <a className="nav-link" href="https://bractus.com">
                   Bractus Website
                  <a className="nav-link" href="https://prudhvignv.github.io">
-                  Check Out Other Cool Projects 
+                  Check Out Other Cool Projects
                 </a>
               </li>
             </ul>
@@ -461,7 +461,7 @@ export default class PathfindingVisualizer extends Component {
           className="btn btn-primary"
           style={{backgroundColor: "#457bda"}}
           onClick={() => this.visualize('BFS')}>
-          Bread First Search
+          Breadth First Search
         </button>
         <button
           type="button"
@@ -489,7 +489,7 @@ export default class PathfindingVisualizer extends Component {
           type="button"
           className="btn btn-danger"
           onClick={() => this.clearGrid()}>
-          Clear 
+          Clear
         </button>
         <button
           type="button"
@@ -497,7 +497,7 @@ export default class PathfindingVisualizer extends Component {
           onClick={() => this.clearWalls()}>
           Remove Walls
         </button>
-        
+
         <div class="col-lg-8 mx-auto text-center " style={{marginTop: 20}}>
         <h1 class="display-4" style={{color: "white"}}>Find the shortest path..</h1>
       </div>
@@ -535,7 +535,7 @@ export default class PathfindingVisualizer extends Component {
             })}
           </tbody>
         </table>
-        
+
       </div>
     );
   }
