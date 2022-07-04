@@ -396,8 +396,8 @@ export default class PathfindingVisualizer extends Component {
     const {grid, mouseIsPressed} = this.state;
     return (
       <div>
-        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark "> */}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+       {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark "> */}
+        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
           <a className="navbar-brand" href="/">
             <b>PathFinding Visualizer</b>
           </a>
@@ -414,6 +414,15 @@ export default class PathfindingVisualizer extends Component {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
+              <a
+                  className="nav-link"
+                  // href="http://www.github.com/PrudhviGNV/pathFinderVisualizer">
+                  href="http://bractus.com/ChhaviArora">
+                  {' '}
+                  Chhavi's Portfolio{' '}
+                </a>
+                </li>
+                <li className="nav-item">
                 <a
                   className="nav-link"
                   // href="http://www.github.com/PrudhviGNV/pathFinderVisualizer">
@@ -425,15 +434,76 @@ export default class PathfindingVisualizer extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="https://bractus.com">
                   Bractus Website
-                {/* <a className="nav-link" href="https://prudhvignv.github.io">
-                  Check Out Other Cool Projects */}
+                 <a className="nav-link" href="https://prudhvignv.github.io">
+                  Check Out Other Cool Projects 
                 </a>
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> */}
+        <div style={{marginTop: 60}}></div>
+        <button
+          type="button"
+          className="btn btn-primary"
+          style={{backgroundColor: "#457bda"}}
+          onClick={() => this.visualize('Dijkstra')}>
+          Dijkstra's
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          style={{backgroundColor: "#457bda"}}
+          onClick={() => this.visualize('AStar')}>
+          A*
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          style={{backgroundColor: "#457bda"}}
+          onClick={() => this.visualize('BFS')}>
+          Bread First Search
+        </button>
+        <button
+          type="button"
+          className="btn btn-primary"
+          style={{backgroundColor: "#457bda"}}
+          onClick={() => this.visualize('DFS')}>
+          Depth First Search
+        </button>
+        {/* {this.state.isDesktopView ? (
+          <button
+            type="button"
+            className="btn btn-light"
+            onClick={() => this.toggleView()}>
+            Mobile View
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="btn btn-dark"
+            onClick={() => this.toggleView()}>
+            Desktop View
+          </button>
+        )} */}
+        <button
+          type="button"
+          className="btn btn-danger"
+          onClick={() => this.clearGrid()}>
+          Clear 
+        </button>
+        <button
+          type="button"
+          className="btn btn-warning"
+          onClick={() => this.clearWalls()}>
+          Remove Walls
+        </button>
+        
+        <div class="col-lg-8 mx-auto text-center " style={{marginTop: 20}}>
+        <h1 class="display-4" style={{color: "white"}}>Find the shortest path..</h1>
+      </div>
 
         <table
+          // style={{margin: "-8px"}}
           className="grid-container"
           onMouseLeave={() => this.handleMouseLeave()}>
           <tbody className="grid">
@@ -465,57 +535,7 @@ export default class PathfindingVisualizer extends Component {
             })}
           </tbody>
         </table>
-        <button
-          type="button"
-          className="btn btn-danger"
-          onClick={() => this.clearGrid()}>
-          Clear Grid
-        </button>
-        <button
-          type="button"
-          className="btn btn-warning"
-          onClick={() => this.clearWalls()}>
-          Clear Walls
-        </button>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={() => this.visualize('Dijkstra')}>
-          Dijkstra's
-        </button>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={() => this.visualize('AStar')}>
-          A*
-        </button>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={() => this.visualize('BFS')}>
-          Bread First Search
-        </button>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={() => this.visualize('DFS')}>
-          Depth First Search
-        </button>
-        {this.state.isDesktopView ? (
-          <button
-            type="button"
-            className="btn btn-light"
-            onClick={() => this.toggleView()}>
-            Mobile View
-          </button>
-        ) : (
-          <button
-            type="button"
-            className="btn btn-dark"
-            onClick={() => this.toggleView()}>
-            Desktop View
-          </button>
-        )}
+        
       </div>
     );
   }

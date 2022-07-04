@@ -1,13 +1,15 @@
 .grid-container {
   margin: 10% auto;
-  /* background-color: blue; */
+  /* background-color: rgb(81, 85, 92); */
+  background-color: #8681ca;
 }
 
 .grid {
   white-space: pre;
-  /* background-color: blue; */
+  /* background-color: cyan; */
 }
 
 button {
   margin: 2px;
+  /* color: green; */
 }

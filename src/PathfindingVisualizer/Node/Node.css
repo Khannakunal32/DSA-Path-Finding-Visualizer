@@ -37,17 +37,21 @@
 
   75% {
     transform: scale(1.2);
-    background-color: rgba(34, 17, 217, 0.75);
+    /* background-color: rgba(34, 17, 217, 0.75); */
+    background-color: aquamarine;
   }
 
   100% {
     transform: scale(1);
-    background-color: rgba(0, 218, 69, 0.75);
+    /* background-color: rgba(0, 218, 69, 0.75); */
+    background-color: rgb(69, 123, 218);
   }
 }
 
 .node-wall {
-  background-color: rgb(12, 53, 71);
+  /* background-color: rgb(12, 53, 71); */
+  background-color: #ffc107;
+  /* background-color: rgb(92, 120, 6); */
 }
 
 .node-shortest-path {
@@ -74,6 +78,7 @@
 
   100% {
     transform: scale(1);
-    background-color: rgb(255, 254, 106);
+    /* background-color: rgb(255, 254, 106); */
+    background-color: #f8f9fa;
   }
 }
