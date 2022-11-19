@@ -499,7 +499,7 @@ export default class PathfindingVisualizer extends Component {
         </button>
 
         <div class="col-lg-8 mx-auto text-center " style={{marginTop: 20}}>
-        <h1 class="display-4" style={{color: "white"}}>Find the shortest path..</h1>
+        {/* <h1 class="display-4" style={{color: "white"}}>Find the shortest path..</h1> */}
       </div>
 
         <table
